@@ -7,8 +7,6 @@ INSERT INTO band VALUES ("Crazy Duo", 2015, "rock"),
 
 # Alterner table singer (maintenant musician) :
 ALTER TABLE singer RENAME TO musician;
-SELECT * FROM musician;
-
 ALTER TABLE musician RENAME COLUMN singerName to musicianName;
 ALTER TABLE musician ADD COLUMN role varchar(50);
 ALTER TABLE musician ADD COLUMN bandName varchar(50);
